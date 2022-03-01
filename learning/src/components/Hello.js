@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Hello = (props) => {
+  const {name, Greet} = props;
   const style = {
     color: 'black',
     fontSize: 100,
@@ -8,7 +9,7 @@ const Hello = (props) => {
   };
   return (
     <div>
-        <h1 style={style} >Hello {props.name} {props.Greet}</h1>
+        <h1 style={style} >Hello {name}, {Greet} ; )</h1>
     </div>
   )
 }
